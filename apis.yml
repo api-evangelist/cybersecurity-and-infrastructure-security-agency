@@ -5,8 +5,7 @@ apis:
   - aid: >-
       cybersecurity-and-infrastructure-security-agency:cybersecurity-and-infrastructure-security-agency
     name: Cybersecurity and Infrastructure Security Agency
-    tags:
-      - API
+    tags: []
     humanURL: https://www.cisa.gov
     properties:
       - url: https://www.cisa.gov
@@ -19,9 +18,9 @@ apis:
       & Infrastructure Security Agency. Facebook; Twitter; LinkedIn ...
 name: Cybersecurity and Infrastructure Security Agency
 tags:
+  - Cybersecurity
   - Federal Government
   - Security
-  - Cybersecurity
 type: Contract
 image: https://kinlane-productions.s3.amazonaws.com/apis-json/apis-json-logo.jpg
 access: 3rd-Party
