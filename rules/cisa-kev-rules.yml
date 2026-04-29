@@ -1,0 +1,38 @@
+extends: spectral:oas
+rules:
+  cisa-kev-info-contact:
+    description: CISA KEV API spec must declare a contact.
+    severity: warn
+    given: $.info
+    then:
+      field: contact
+      function: truthy
+  cisa-kev-server-https:
+    description: All KEV servers must use HTTPS.
+    severity: error
+    given: $.servers[*].url
+    then:
+      function: pattern
+      functionOptions:
+        match: '^https://'
+  cisa-kev-tags-required:
+    description: Every operation must declare at least one tag.
+    severity: warn
+    given: $.paths[*][get,post,put,patch,delete]
+    then:
+      field: tags
+      function: truthy
+  cisa-kev-operation-id-required:
+    description: Every operation must declare an operationId.
+    severity: error
+    given: $.paths[*][get,post,put,patch,delete]
+    then:
+      field: operationId
+      function: truthy
+  cisa-kev-public-no-auth:
+    description: KEV feed is public; spec must not declare a global security requirement.
+    severity: warn
+    given: $
+    then:
+      field: security
+      function: falsy

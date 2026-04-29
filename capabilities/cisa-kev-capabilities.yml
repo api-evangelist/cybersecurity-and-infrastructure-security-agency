@@ -1,0 +1,23 @@
+name: CISA KEV Catalog Capabilities
+description: >-
+  Capability profile for the CISA Known Exploited Vulnerabilities (KEV)
+  catalog feed. Each capability maps to one of the public, unauthenticated
+  files CISA publishes for vulnerability management programs.
+modified: '2026-04-28'
+api: cisa-kev
+capabilities:
+  - id: download-kev-json
+    name: Download KEV Catalog (JSON)
+    description: Fetch the full KEV catalog as JSON for ingestion into vulnerability scanners and SIEMs.
+    operations:
+      - GET /sites/default/files/feeds/known_exploited_vulnerabilities.json
+  - id: download-kev-csv
+    name: Download KEV Catalog (CSV)
+    description: Fetch the KEV catalog as CSV for spreadsheet-based reporting.
+    operations:
+      - GET /sites/default/files/feeds/known_exploited_vulnerabilities.csv
+  - id: download-kev-schema
+    name: Download KEV JSON Schema
+    description: Fetch the JSON Schema describing the structure of the KEV feed.
+    operations:
+      - GET /sites/default/files/feeds/known_exploited_vulnerabilities_schema.json

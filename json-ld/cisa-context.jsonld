@@ -1,0 +1,26 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@vocab": "https://raw.githubusercontent.com/api-evangelist/cybersecurity-and-infrastructure-security-agency/refs/heads/main/vocabulary/cisa-vocabulary.yml#",
+    "schema": "https://schema.org/",
+    "cisa": "https://raw.githubusercontent.com/api-evangelist/cybersecurity-and-infrastructure-security-agency/refs/heads/main/vocabulary/cisa-vocabulary.yml#",
+    "KevVulnerability": "cisa:KevVulnerability",
+    "CVE": "cisa:CVE",
+    "CWE": "cisa:CWE",
+    "CybersecurityAdvisory": "cisa:CybersecurityAdvisory",
+    "AutomatedIndicatorSharing": "cisa:AutomatedIndicatorSharing",
+    "BindingOperationalDirective": "cisa:BindingOperationalDirective",
+    "id": "@id",
+    "type": "@type",
+    "cveID": "cisa:cveID",
+    "vendorProject": "cisa:vendorProject",
+    "product": "cisa:product",
+    "vulnerabilityName": "schema:name",
+    "dateAdded": "schema:dateCreated",
+    "shortDescription": "schema:description",
+    "requiredAction": "cisa:requiredAction",
+    "dueDate": "schema:expires",
+    "knownRansomwareCampaignUse": "cisa:knownRansomwareCampaignUse",
+    "cwes": "cisa:cwes"
+  }
+}

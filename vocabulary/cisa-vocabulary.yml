@@ -1,0 +1,32 @@
+name: CISA Vocabulary
+description: >-
+  Controlled vocabulary describing the core concepts CISA exposes
+  through public feeds, advisories, and threat-sharing programs:
+  Known Exploited Vulnerabilities, Common Vulnerabilities and
+  Exposures, Common Weakness Enumeration, Cybersecurity Advisories,
+  and Automated Indicator Sharing.
+modified: '2026-04-28'
+terms:
+  - term: KevVulnerability
+    description: A vulnerability listed in the CISA Known Exploited Vulnerabilities catalog.
+    properties:
+      - cveID
+      - vendorProject
+      - product
+      - vulnerabilityName
+      - dateAdded
+      - shortDescription
+      - requiredAction
+      - dueDate
+      - knownRansomwareCampaignUse
+      - cwes
+  - term: CVE
+    description: A Common Vulnerabilities and Exposures identifier (e.g., CVE-2024-1708).
+  - term: CWE
+    description: A Common Weakness Enumeration identifier categorizing the underlying weakness type (e.g., CWE-79 cross-site scripting).
+  - term: CybersecurityAdvisory
+    description: A published CISA advisory describing tactics, techniques, and indicators associated with a threat actor or campaign.
+  - term: AutomatedIndicatorSharing
+    description: CISA's TAXII 2.1 server delivering STIX cyber threat indicators and defensive measures to vetted partners.
+  - term: BindingOperationalDirective
+    description: A compulsory directive issued to U.S. federal civilian executive branch agencies (e.g., BOD 22-01 mandating KEV remediation).
