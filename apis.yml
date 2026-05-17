@@ -1,6 +1,6 @@
 aid: cybersecurity-and-infrastructure-security-agency
 name: Cybersecurity and Infrastructure Security Agency
-x-type: government
+kind: government
 description: >-
   The Cybersecurity and Infrastructure Security Agency (CISA) is the
   United States federal civilian cybersecurity agency, part of the
@@ -152,7 +152,7 @@ common:
     url: https://www.cisa.gov/about/contact-us
   - type: PrivacyPolicy
     url: https://www.cisa.gov/privacy-policy
-  - type: JSON-LD
+  - type: JSONLD
     url: json-ld/cisa-context.jsonld
   - type: JSONSchema
     url: json-schema/cisa-kev-vulnerability-schema.json
