@@ -1,0 +1,59 @@
+{
+  "opencollection": "1.0.0",
+  "info": {
+    "name": "CISA Known Exploited Vulnerabilities (KEV) Catalog API",
+    "version": "1.0"
+  },
+  "items": [
+    {
+      "info": {
+        "name": "KEV",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the KEV catalog as JSON",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.json"
+          },
+          "docs": "Returns the full Known Exploited Vulnerabilities catalog as a JSON document. This endpoint is unauthenticated and intended for public consumption by vulnerability management programs."
+        },
+        {
+          "info": {
+            "name": "Get the KEV catalog as CSV",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities.csv"
+          },
+          "docs": "Returns the same KEV data as a CSV file."
+        }
+      ]
+    },
+    {
+      "info": {
+        "name": "Schema",
+        "type": "folder"
+      },
+      "items": [
+        {
+          "info": {
+            "name": "Get the JSON Schema for the KEV catalog",
+            "type": "http"
+          },
+          "http": {
+            "method": "GET",
+            "url": "https://www.cisa.gov/sites/default/files/feeds/known_exploited_vulnerabilities_schema.json"
+          },
+          "docs": "Returns the JSON Schema document used to validate the KEV JSON feed."
+        }
+      ]
+    }
+  ],
+  "bundled": true
+}
