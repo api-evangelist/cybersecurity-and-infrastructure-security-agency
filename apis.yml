@@ -12,7 +12,7 @@ description: >-
   indicators to vetted partners under a Terms of Use and Interconnection Agreement.
 url: >-
   https://raw.githubusercontent.com/api-evangelist/cybersecurity-and-infrastructure-security-agency/refs/heads/main/apis.yml
-image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
 type: Index
 access: 3rd-Party
 position: Consuming
@@ -47,7 +47,7 @@ apis:
       is published as JSON and CSV at cisa.gov/sites/default/files/feeds, mirrored on GitHub at cisagov/kev-data, and
       accompanied by a versioned JSON Schema. Federal civilian agencies must remediate KEV entries by the per-entry
       dueDate under BOD 22-01.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
     baseURL: https://www.cisa.gov
     tags:
@@ -82,7 +82,7 @@ apis:
       indicators (CTI) and defensive measures (DM) to vetted partners. AIS includes AIS PUBLIC, FEDGOV, and CISCP feed
       communities. Connection requires a static IP, a Terms of Use, and an Interconnection Agreement; commercial data
       aggregators also redistribute AIS content to subscribers.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.cisa.gov/topics/cyber-threats-and-advisories/information-sharing/automated-indicator-sharing-ais
     tags:
       - AIS
@@ -103,7 +103,7 @@ apis:
       CISA publishes Cybersecurity Advisories (CSAs), Industrial Control Systems Advisories (ICSAs), and Common Security
       Advisory Framework (CSAF) JSON documents describing tactics, techniques, indicators, and required mitigations for
       active threats. Advisories are browsable on cisa.gov and many are exported as machine-readable CSAF JSON.
-    image: https://kinlane-productions2.s3.amazonaws.com/apis-json/apis-json-logo.jpg
+    image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/apis-json-logo.jpg
     humanURL: https://www.cisa.gov/news-events/cybersecurity-advisories
     tags:
       - Advisories
