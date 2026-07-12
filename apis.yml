@@ -118,6 +118,10 @@ apis:
       - type: CSAF
         url: https://www.cisa.gov/news-events/cybersecurity-advisories/csaf
 common:
+  - type: VulnerabilityDisclosure
+    url: security/cybersecurity-and-infrastructure-security-agency-vulnerability-disclosure.yml
+  - type: DomainSecurity
+    url: security/cybersecurity-and-infrastructure-security-agency-domain-security.yml
   - type: LinkedIn
     url: https://www.linkedin.com/company/cisagov
   - type: Website
@@ -150,6 +154,8 @@ common:
     url: capabilities/cisa-kev-capabilities.yml
   - type: Rules
     url: rules/cisa-kev-rules.yml
+  - url: https://www.cisa.gov/cybersecurity-advisories/all.xml
+    type: Blog
 maintainers:
   - FN: Kin Lane
     email: kin@apievangelist.com
