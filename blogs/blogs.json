@@ -1,0 +1,14 @@
+{
+  "repo": "cybersecurity-and-infrastructure-security-agency",
+  "feeds": [
+    {
+      "source": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "feed_url": "https://www.cisa.gov/cybersecurity-advisories/all.xml",
+      "title": "",
+      "saved": 0,
+      "method": "feed"
+    }
+  ],
+  "fetched": "2026-07-11T11:50:51Z",
+  "post_count": 48
+}
