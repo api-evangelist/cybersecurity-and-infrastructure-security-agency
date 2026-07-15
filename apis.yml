@@ -118,6 +118,8 @@ apis:
       - type: CSAF
         url: https://www.cisa.gov/news-events/cybersecurity-advisories/csaf
 common:
+  - type: AgenticAccess
+    url: agentic-access/cybersecurity-and-infrastructure-security-agency-agentic-access.yml
   - type: VulnerabilityDisclosure
     url: security/cybersecurity-and-infrastructure-security-agency-vulnerability-disclosure.yml
   - type: DomainSecurity

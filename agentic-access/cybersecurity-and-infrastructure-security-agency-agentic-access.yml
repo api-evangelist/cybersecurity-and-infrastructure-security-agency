@@ -1,0 +1,44 @@
+generated: '2026-07-15'
+method: generated
+source: openapi/cisa-kev-openapi.yml
+description: Recommended x-agentic-access execution contracts, classified heuristically from
+  the OpenAPI. A governance starting point for exposing this API to AI agents — review and bind
+  audience per deployment. See research/curity/agentic-governance/.
+summary:
+  operations: 3
+  by_action_class:
+    connected: 3
+  by_consequence:
+    read: 3
+  human_in_the_loop_required: 0
+operations:
+- path: /sites/default/files/feeds/known_exploited_vulnerabilities.json
+  method: get
+  operationId: getKevJson
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /sites/default/files/feeds/known_exploited_vulnerabilities.csv
+  method: get
+  operationId: getKevCsv
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
+- path: /sites/default/files/feeds/known_exploited_vulnerabilities_schema.json
+  method: get
+  operationId: getKevJsonSchema
+  x-agentic-access:
+    action-class: connected
+    consequence: read
+    subject: optional
+    token:
+      max-ttl: 3600
+    audit: none
