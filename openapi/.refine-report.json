@@ -1,0 +1,16 @@
+{
+  "provider": "cybersecurity-and-infrastructure-security-agency",
+  "sources": [
+    "cybersecurity-and-infrastructure-security-agency-kev-api-openapi.yml",
+    "cybersecurity-and-infrastructure-security-agency-schema-api-openapi.yml"
+  ],
+  "outputs": [
+    "cybersecurity-and-infrastructure-security-agency-kev-api-openapi.yml",
+    "cybersecurity-and-infrastructure-security-agency-schema-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

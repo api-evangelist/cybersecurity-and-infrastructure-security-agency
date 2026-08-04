@@ -1,0 +1,142 @@
+openapi: 3.0.3
+info:
+  title: CISA Known Exploited Vulnerabilities (KEV) Catalog API
+  description: >-
+    The CISA Known Exploited Vulnerabilities (KEV) Catalog is the
+    authoritative source of vulnerabilities that have been actively
+    exploited in the wild. CISA publishes the catalog as a
+    machine-readable JSON feed (and CSV) updated within minutes of
+    catalog changes during U.S. business hours. Federal civilian
+    agencies are required by Binding Operational Directive 22-01 to
+    remediate KEV-listed vulnerabilities by the dueDate provided in
+    each entry. This OpenAPI describes the unauthenticated public
+    JSON feed and its mirror on GitHub.
+  version: '1.0'
+  contact:
+    name: CISA
+    url: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
+servers:
+  - url: https://www.cisa.gov
+    description: Canonical CISA-hosted feed
+  - url: https://raw.githubusercontent.com/cisagov/kev-data/develop
+    description: GitHub mirror maintained by cisagov/kev-data
+tags:
+  - name: KEV
+    description: Known Exploited Vulnerabilities catalog feed
+  - name: Schema
+    description: JSON Schema for the KEV catalog
+paths:
+  /sites/default/files/feeds/known_exploited_vulnerabilities.json:
+    get:
+      tags:
+        - KEV
+      summary: Get the KEV catalog as JSON
+      description: >-
+        Returns the full Known Exploited Vulnerabilities catalog as a
+        JSON document. This endpoint is unauthenticated and intended
+        for public consumption by vulnerability management programs.
+      operationId: getKevJson
+      responses:
+        '200':
+          description: KEV catalog JSON
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/KevCatalog'
+  /sites/default/files/feeds/known_exploited_vulnerabilities.csv:
+    get:
+      tags:
+        - KEV
+      summary: Get the KEV catalog as CSV
+      description: Returns the same KEV data as a CSV file.
+      operationId: getKevCsv
+      responses:
+        '200':
+          description: KEV catalog CSV
+          content:
+            text/csv:
+              schema:
+                type: string
+  /sites/default/files/feeds/known_exploited_vulnerabilities_schema.json:
+    get:
+      tags:
+        - Schema
+      summary: Get the JSON Schema for the KEV catalog
+      description: Returns the JSON Schema document used to validate the KEV JSON feed.
+      operationId: getKevJsonSchema
+      responses:
+        '200':
+          description: KEV JSON Schema
+          content:
+            application/json:
+              schema:
+                type: object
+components:
+  schemas:
+    KevCatalog:
+      type: object
+      required:
+        - title
+        - catalogVersion
+        - dateReleased
+        - count
+        - vulnerabilities
+      properties:
+        title:
+          type: string
+          example: CISA Catalog of Known Exploited Vulnerabilities
+        catalogVersion:
+          type: string
+          description: ISO-style catalog version (YYYY.MM.DD).
+        dateReleased:
+          type: string
+          format: date-time
+        count:
+          type: integer
+          description: Total number of vulnerability entries.
+        vulnerabilities:
+          type: array
+          items:
+            $ref: '#/components/schemas/KevVulnerability'
+    KevVulnerability:
+      type: object
+      required:
+        - cveID
+        - vendorProject
+        - product
+        - vulnerabilityName
+        - dateAdded
+        - shortDescription
+        - requiredAction
+        - dueDate
+        - knownRansomwareCampaignUse
+      properties:
+        cveID:
+          type: string
+          example: CVE-2024-1708
+        vendorProject:
+          type: string
+        product:
+          type: string
+        vulnerabilityName:
+          type: string
+        dateAdded:
+          type: string
+          format: date
+        shortDescription:
+          type: string
+        requiredAction:
+          type: string
+        dueDate:
+          type: string
+          format: date
+        knownRansomwareCampaignUse:
+          type: string
+          enum: [Known, Unknown]
+        notes:
+          type: string
+        cwes:
+          type: array
+          items:
+            type: string
+            example: CWE-79
