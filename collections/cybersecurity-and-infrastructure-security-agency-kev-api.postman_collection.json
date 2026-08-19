@@ -1,0 +1,188 @@
+{
+  "item": [
+    {
+      "id": "263fea08-21e0-44db-bcec-06ff295f12fe",
+      "name": "KEV",
+      "description": {
+        "content": "Known Exploited Vulnerabilities catalog feed",
+        "type": "text/plain"
+      },
+      "item": [
+        {
+          "id": "979547a3-af35-43b5-bc62-d611f2c771a9",
+          "name": "Get the KEV catalog as JSON",
+          "request": {
+            "name": "Get the KEV catalog as JSON",
+            "description": {
+              "content": "Returns the full Known Exploited Vulnerabilities catalog as a JSON document. This endpoint is unauthenticated and intended for public consumption by vulnerability management programs.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "sites",
+                "default",
+                "files",
+                "feeds",
+                "known_exploited_vulnerabilities.json"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "application/json"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "3a2abe01-573d-4b52-93da-479421b5908d",
+              "name": "KEV catalog JSON",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "sites",
+                    "default",
+                    "files",
+                    "feeds",
+                    "known_exploited_vulnerabilities.json"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "application/json"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "application/json"
+                }
+              ],
+              "body": "{\n  \"title\": \"CISA Catalog of Known Exploited Vulnerabilities\",\n  \"catalogVersion\": \"string\",\n  \"dateReleased\": \"1966-02-12T05:43:48.308Z\",\n  \"count\": 3122,\n  \"vulnerabilities\": [\n    {\n      \"cveID\": \"CVE-2024-1708\",\n      \"vendorProject\": \"string\",\n      \"product\": \"string\",\n      \"vulnerabilityName\": \"string\",\n      \"dateAdded\": \"1997-04-05\",\n      \"shortDescription\": \"string\",\n      \"requiredAction\": \"string\",\n      \"dueDate\": \"1964-11-11\",\n      \"knownRansomwareCampaignUse\": \"Known\",\n      \"notes\": \"string\",\n      \"cwes\": [\n        \"CWE-79\",\n        \"CWE-79\"\n      ]\n    },\n    {\n      \"cveID\": \"CVE-2024-1708\",\n      \"vendorProject\": \"string\",\n      \"product\": \"string\",\n      \"vulnerabilityName\": \"string\",\n      \"dateAdded\": \"1975-10-02\",\n      \"shortDescription\": \"string\",\n      \"requiredAction\": \"string\",\n      \"dueDate\": \"1963-10-01\",\n      \"knownRansomwareCampaignUse\": \"Known\",\n      \"notes\": \"string\",\n      \"cwes\": [\n        \"CWE-79\",\n        \"CWE-79\"\n      ]\n    }\n  ]\n}",
+              "cookie": [],
+              "_postman_previewlanguage": "json"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        },
+        {
+          "id": "efc3132e-bfef-4e59-b204-f7e2e5cd6350",
+          "name": "Get the KEV catalog as CSV",
+          "request": {
+            "name": "Get the KEV catalog as CSV",
+            "description": {
+              "content": "Returns the same KEV data as a CSV file.",
+              "type": "text/plain"
+            },
+            "url": {
+              "path": [
+                "sites",
+                "default",
+                "files",
+                "feeds",
+                "known_exploited_vulnerabilities.csv"
+              ],
+              "host": [
+                "{{baseUrl}}"
+              ],
+              "query": [],
+              "variable": []
+            },
+            "header": [
+              {
+                "key": "Accept",
+                "value": "text/csv"
+              }
+            ],
+            "method": "GET",
+            "auth": null
+          },
+          "response": [
+            {
+              "id": "fb05537c-e828-4cd9-b09c-78b30f0b0481",
+              "name": "KEV catalog CSV",
+              "originalRequest": {
+                "url": {
+                  "path": [
+                    "sites",
+                    "default",
+                    "files",
+                    "feeds",
+                    "known_exploited_vulnerabilities.csv"
+                  ],
+                  "host": [
+                    "{{baseUrl}}"
+                  ],
+                  "query": [],
+                  "variable": []
+                },
+                "header": [
+                  {
+                    "key": "Accept",
+                    "value": "text/csv"
+                  }
+                ],
+                "method": "GET",
+                "body": {}
+              },
+              "status": "OK",
+              "code": 200,
+              "header": [
+                {
+                  "key": "Content-Type",
+                  "value": "text/csv"
+                }
+              ],
+              "body": "string",
+              "cookie": [],
+              "_postman_previewlanguage": "text"
+            }
+          ],
+          "event": [],
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          }
+        }
+      ],
+      "event": []
+    }
+  ],
+  "event": [],
+  "variable": [
+    {
+      "type": "string",
+      "value": "https://www.cisa.gov",
+      "key": "baseUrl"
+    }
+  ],
+  "info": {
+    "_postman_id": "41b5986c-318c-49c6-9b2b-a9abebfac4b2",
+    "name": "CISA Known Exploited Vulnerabilities () Catalog KEV API",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+    "description": {
+      "content": "The CISA Known Exploited Vulnerabilities (KEV) Catalog is the authoritative source of vulnerabilities that have been actively exploited in the wild. CISA publishes the catalog as a machine-readable JSON feed (and CSV) updated within minutes of catalog changes during U.S. business hours. Federal civilian agencies are required by Binding Operational Directive 22-01 to remediate KEV-listed vulnerabilities by the dueDate provided in each entry. This OpenAPI describes the unauthenticated public JSON feed and its mirror on GitHub.\n\nContact Support:\n Name: CISA",
+      "type": "text/plain"
+    }
+  }
+}
