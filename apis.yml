@@ -39,6 +39,26 @@ tags:
   - CVE
   - CWE
   - Cybersecurity
+  - Federal-Government
+  - Government
+  - ICS-CERT
+  - Information Sharing
+  - KEV
+  - Known Exploited Vulnerabilities
+  - Risk Management
+  - Security
+  - STIX
+  - TAXII
+  - Threat Intelligence
+  - Vulnerability Management
+tags_raw:
+  - Advisories
+  - AIS
+  - Binding Operational Directive
+  - CSAF
+  - CVE
+  - CWE
+  - Cybersecurity
   - Federal Government
   - Government
   - ICS-CERT
