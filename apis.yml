@@ -178,6 +178,9 @@ apis:
   - type: Rules
     url: rules/cisa-kev-rules.yml
 common:
+  - type: CapabilityMap
+    url: capabilities/cybersecurity-and-infrastructure-security-agency-capability-edges.yml
+    name: Cybersecurity and Infrastructure Security Agency Business Capability Map
   - type: AgenticAccess
     url: agentic-access/cybersecurity-and-infrastructure-security-agency-agentic-access.yml
   - type: VulnerabilityDisclosure
