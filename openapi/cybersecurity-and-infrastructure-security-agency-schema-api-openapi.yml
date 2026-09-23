@@ -1,7 +1,7 @@
-openapi: 3.0.3
+openapi: 3.2.0
 info:
-  title: CISA Known Exploited Vulnerabilities () Catalog KEV Schema API
-  description: The CISA Known Exploited Vulnerabilities (KEV) Catalog is the authoritative source of vulnerabilities that have been actively exploited in the wild. CISA publishes the catalog as a machine-readable JSON feed (and CSV) updated within minutes of catalog changes during U.S. business hours. Federal civilian agencies are required by Binding Operational Directive 22-01 to remediate KEV-listed vulnerabilities by the dueDate provided in each entry. This OpenAPI describes the unauthenticated public JSON feed and its mirror on GitHub.
+  title: CISA Known Exploited Vulnerabilities (KEV) Catalog Schema…
+  description: The CISA Known Exploited Vulnerabilities (KEV) Catalog is the authoritative source of vulnerabilities that have been actively exploited in the wild.
   version: '1.0'
   contact:
     name: CISA
