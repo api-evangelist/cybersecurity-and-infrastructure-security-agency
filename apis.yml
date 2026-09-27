@@ -50,7 +50,7 @@ tags:
   - CVE
   - CWE
   - Cybersecurity
-  - Federal-Government
+  - Federal Government
   - Government
   - ICS-CERT
   - Information Sharing
@@ -82,6 +82,7 @@ tags_raw:
   - TAXII
   - Threat Intelligence
   - Vulnerability Management
+  - Federal-Government
 apis:
 - aid: cybersecurity-and-infrastructure-security-agency:ais
   name: CISA Automated Indicator Sharing (AIS) TAXII Server
@@ -134,7 +135,7 @@ apis:
   name: Cybersecurity and Infrastructure Security Agency KEV API
   description: Known Exploited Vulnerabilities catalog feed
   humanURL: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
-  baseURL: https://www.cisa.gov
+  baseURL: https://raw.githubusercontent.com/cisagov/kev-data/develop
   tags:
   - KEV
   properties:
@@ -158,7 +159,7 @@ apis:
   name: Cybersecurity and Infrastructure Security Agency Schema API
   description: JSON Schema for the KEV catalog
   humanURL: https://www.cisa.gov/known-exploited-vulnerabilities-catalog
-  baseURL: https://www.cisa.gov
+  baseURL: https://raw.githubusercontent.com/cisagov/kev-data/develop
   tags:
   - Schema
   properties:
