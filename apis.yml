@@ -179,6 +179,12 @@ apis:
   - type: Rules
     url: rules/cisa-kev-rules.yml
 common:
+  - type: Plans
+    url: plans/cybersecurity-and-infrastructure-security-agency-plans-pricing.yml
+  - type: RateLimits
+    url: rate-limits/cybersecurity-and-infrastructure-security-agency-rate-limits.yml
+  - type: FinOps
+    url: finops/cybersecurity-and-infrastructure-security-agency-finops.yml
   - type: CapabilityMap
     url: capabilities/cybersecurity-and-infrastructure-security-agency-capability-edges.yml
     name: Cybersecurity and Infrastructure Security Agency Business Capability Map
